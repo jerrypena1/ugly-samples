@@ -1,8 +1,35 @@
-<div>
-<h1>Unformatted</h1>
-<div>
-<span>Un<span>formatted</span></span>
-</div>
-<span><span>For</span><span>mat</span><span>ted</span></span>
-<div><div>For</div><div>mat</div><div>ted</div></div>
-</div>
+
+<header>this is just some <%= cow %>random code I thru in just because
+<% if (1 ==0) { %>
+                <span>apples
+
+  </span>
+      <% } %>
+</header>
+
+                  <header class="pickles">
+                  <h3>We Love <%= 'Pickles' %></h3>
+                  </header>
+                  <snippet name="_test:outer">
+                  <div>
+<% if (1==0){ %>
+<snippet name="_test:inner">
+  <div>
+    Hello <%= 'World' %>
+  </div>
+  <snippet name="_test:innerInner">
+    <div>
+      Hello world inner
+    </div>
+  </snippet>
+</snippet>
+<% } %>
+                  </div>
+                  </snippet>
+                  <section>
+                  <snippet name="_test:section">
+                    <div>
+                      <a href="#">GO TIME!</a>
+                    </div>
+                  </snippet>
+                  </section>
